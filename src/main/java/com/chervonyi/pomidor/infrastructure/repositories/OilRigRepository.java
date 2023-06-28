@@ -8,6 +8,7 @@ import com.chervonyi.pomidor.infrastructure.context.DataContext;
 import com.chervonyi.pomidor.infrastructure.writers.OilRigDataWriter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Repository;
 
 import java.util.Date;
@@ -61,9 +62,11 @@ public final class OilRigRepository {
                     + "in createOilRig with message {}",
                     e.getMessage());
 
-            return Result.failure(new ApplicationError(
-                    "OilRig.CreateError",
-                    e.getMessage()));
+            return Result.failure(
+                    new ApplicationError(
+                        "OilRig.CreateError",
+                        e.getMessage(),
+                        HttpStatus.INTERNAL_SERVER_ERROR));
         }
     }
 
@@ -92,8 +95,9 @@ public final class OilRigRepository {
 
             return Result.failure(
                     new ApplicationError(
-                            "OilRig.AddShipmentDateToOilRigByIdError",
-                            e.getMessage()));
+                        "OilRig.AddShipmentDateToOilRigByIdError",
+                        e.getMessage(),
+                        HttpStatus.INTERNAL_SERVER_ERROR));
         }
     }
 
@@ -117,8 +121,9 @@ public final class OilRigRepository {
 
             return Result.failure(
                     new ApplicationError(
-                            "OilRig.DeleteOilRigError",
-                            e.getMessage()));
+                        "OilRig.DeleteOilRigError",
+                        e.getMessage(),
+                        HttpStatus.INTERNAL_SERVER_ERROR));
         }
     }
 
@@ -149,8 +154,9 @@ public final class OilRigRepository {
 
             return Result.failure(
                     new ApplicationError(
-                            "OilRig.UpdateOilRigError",
-                            e.getMessage()));
+                        "OilRig.UpdateOilRigError",
+                        e.getMessage(),
+                        HttpStatus.INTERNAL_SERVER_ERROR));
         }
     }
 
