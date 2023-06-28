@@ -1,70 +1,74 @@
-package com.chervonyi.pomidor.infrastructure.managers;
+package com.chervonyi.pomidor.infrastructure.writers;
 
 import com.chervonyi.pomidor.domain.models.OilRig;
-import com.chervonyi.pomidor.infrastructure.context.DataContext;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.StandardCopyOption;
-import java.util.*;
+import java.nio.file.Paths;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
+import java.util.List;
+import java.util.Map;
+import java.util.UUID;
 
+@Slf4j
 @Component
-public class OilRigDataManager {
-    private final DataContext dataContext;
+public final class OilRigDataWriter {
+    @Value("${data.directory}")
+    private String dataDirectory;
 
-    @Autowired
-    public OilRigDataManager(DataContext dataContext) {
-        this.dataContext = dataContext;
-    }
+    public void writeToCsv(final Map<UUID, OilRig> oilRigMap) {
+        var csvFilePath = Paths.get(
+                dataDirectory
+                + "/oilRig-"
+                + LocalDate.now()
+                    .format(DateTimeFormatter.ofPattern("yyyy-MM-dd"))
+                + ".csv").toFile();
 
-    public void updateOilRig(int id, OilRig updatedOilRig) {
-        var allOilRigs = dataContext.getOilRigMap();
+        try (var writer = new BufferedWriter(new FileWriter(
+                csvFilePath,
+                false))) {
+            var csvHeader = "Id, FillingDegree, Longitude,"
+                    + " Latitude, ShipmentByTankerDates";
 
-        for (var oilRig : allOilRigs.values()) {
-            if (oilRig.getId() == id) {
-                oilRig.setFillingDegree(updatedOilRig.getFillingDegree());
-                oilRig.setLatitude(updatedOilRig.getLatitude());
-                oilRig.setLongitude(updatedOilRig.getLongitude());
-                oilRig.setShipmentByTankerDates(updatedOilRig.getShipmentByTankerDates());
+            writer.write(csvHeader);
+            writer.newLine();
 
-                break;
-            }
-        }
+            for (var oilRig : oilRigMap.values()) {
+                writer.write(
+                        oilRig.getId() + ","
+                        + oilRig.getFillingDegree()
+                        + "," + oilRig.getLatitude()
+                        + "," + oilRig.getLongitude() + ","
+                        + oilRigShipmentByTankerDatesToCsvFormat(
+                                oilRig.getShipmentByTankerDates()));
 
-        writeToCsv(allOilRigs);
-    }
-
-    private void writeToCsv(Map<Integer, OilRig> entities) {
-        var csvFilePath = dataContext.getDataDirectory();
-        var tempFilePath = csvFilePath + ".tmp";
-
-        try (var writer = new BufferedWriter(new FileWriter(tempFilePath))) {
-            for (var oilRig : entities.values()) {
-                // Write each OilRig as a line in the CSV file
-                writer.write(oilRig.getId() + "," + oilRig.getFillingDegree() + "," +
-                        oilRig.getLatitude() + "," + oilRig.getLongitude() + "," + oilRig.getShipmentByTankerDates());
                 writer.newLine();
             }
         } catch (IOException e) {
-            // Handle the exception appropriately
-            e.printStackTrace();
-        }
-
-
-        try {
-            Files.move(Path.of(tempFilePath), Path.of(csvFilePath), StandardCopyOption.REPLACE_EXISTING);
-        } catch (IOException e) {
-            // Handle the exception appropriately
-            e.printStackTrace();
+            log.error(
+                    "Error occurred "
+                    + "in OilRigDataWriter with message {}",
+                    e.getMessage());
         }
     }
 
-    //private String oilRigShipmentByTankerDatesToCsvFormat(List<Date> shipmentByTankerDates){
-      //  var result
-    //}
+    private String oilRigShipmentByTankerDatesToCsvFormat(
+            final List<Date> shipmentByTankerDates) {
+        var builder = new StringBuilder();
+        for (int i = 0; i < shipmentByTankerDates.size(); i++) {
+            var date = shipmentByTankerDates.get(i);
+            builder.append(date.getTime());
+            if (i < shipmentByTankerDates.size() - 1) {
+                builder.append(";");
+            }
+        }
+
+        return builder.toString();
+    }
 }
