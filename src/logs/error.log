@@ -1,0 +1,61 @@
+2023-06-26 21:19:46.384 [main] ERROR c.c.p.i.writers.OilRigDataWriter - Error occurred in OilRigDataWriter with message null\oilRig-2023-06-26.csv (The system cannot find the path specified)
+2023-06-26 21:28:52.795 [main] ERROR c.c.p.i.writers.OilRigDataWriter - Error occurred in OilRigDataWriter with message null\oilRig-2023-06-26.csv (The system cannot find the path specified)
+2023-06-26 21:35:18.348 [main] ERROR c.c.p.i.writers.OilRigDataWriter - Error occurred in OilRigDataWriter with message null\oilRig-2023-06-26.csv (The system cannot find the path specified)
+2023-06-26 21:51:22.050 [main] ERROR c.c.p.i.writers.OilRigDataWriter - Error occurred in OilRigDataWriter with message null\oilRig-2023-06-26.csv (The system cannot find the path specified)
+2023-06-26 21:51:30.963 [main] ERROR c.c.p.i.writers.OilRigDataWriter - Error occurred in OilRigDataWriter with message E:\JavaProjects\Pomidor\src\test\test_data\oilRig-2023-06-26.csv (The system cannot find the path specified)
+2023-06-26 21:58:35.994 [main] ERROR c.c.p.i.writers.OilRigDataWriter - Error occurred in OilRigDataWriter with message E:\JavaProjects\Pomidor\src\test\test_data\oilRig-2023-06-26.csv (The system cannot find the path specified)
+2023-06-26 22:00:01.094 [main] ERROR c.c.p.i.writers.OilRigDataWriter - Error occurred in OilRigDataWriter with message E:\JavaProjects\Pomidor\src\test\test_data\oilRig-2023-06-26.csv (The system cannot find the path specified)
+2023-06-26 22:00:20.486 [main] ERROR c.c.p.i.writers.OilRigDataWriter - Error occurred in OilRigDataWriter with message E:\JavaProjects\Pomidor\src\test\test_data\oilRig-2023-06-26.csv (The system cannot find the path specified)
+2023-06-26 22:12:23.818 [main] ERROR c.c.p.i.readers.OilRigDataReader - Error occurred in OilRigDataReader with message E:\JavaProjects\Pomidor\src\test\test_data
+2023-06-26 22:13:31.840 [main] ERROR c.c.p.i.readers.OilRigDataReader - Error occurred in OilRigDataReader with message E:\JavaProjects\Pomidor\src\test\test_data
+2023-06-27 16:31:54.990 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 16:36:49.130 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 16:38:37.205 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 16:38:53.686 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 16:58:30.036 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 16:58:30.073 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in addShipmentDateToOilRigById with message null
+2023-06-27 16:59:55.958 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 16:59:55.996 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in addShipmentDateToOilRigById with message null
+2023-06-27 17:02:09.622 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 17:03:32.024 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in addShipmentDateToOilRigById with message null
+2023-06-27 17:12:42.449 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 17:12:42.491 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in addShipmentDateToOilRigById with message null
+2023-06-27 17:13:32.890 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 17:13:43.260 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 17:14:40.846 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 17:15:03.663 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 17:16:40.605 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 17:16:40.669 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in addShipmentDateToOilRigById with message Something went wrong
+2023-06-27 17:21:28.034 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 17:21:28.077 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in addShipmentDateToOilRigById with message Something went wrong
+2023-06-27 17:23:11.915 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 17:23:11.950 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in addShipmentDateToOilRigById with message Something went wrong
+2023-06-27 17:24:47.286 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 17:24:47.313 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in deleteOilRig with message Something went wrong
+2023-06-27 17:24:47.328 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in addShipmentDateToOilRigById with message Something went wrong
+2023-06-27 17:25:10.257 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 17:25:10.280 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in deleteOilRig with message Something went wrong
+2023-06-27 17:25:10.296 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in addShipmentDateToOilRigById with message Something went wrong
+2023-06-27 17:29:57.328 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 17:29:57.349 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in deleteOilRig with message Something went wrong
+2023-06-27 17:29:57.366 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in addShipmentDateToOilRigById with message Something went wrong
+2023-06-27 17:35:27.895 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 17:35:27.923 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in deleteOilRig with message Something went wrong
+2023-06-27 17:35:27.933 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in updateOilRig with message Something went wrong
+2023-06-27 17:35:27.946 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in addShipmentDateToOilRigById with message Something went wrong
+2023-06-27 19:52:42.871 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 19:52:42.905 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in deleteOilRig with message Something went wrong
+2023-06-27 19:52:42.917 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in updateOilRig with message Something went wrong
+2023-06-27 19:52:42.931 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in addShipmentDateToOilRigById with message Something went wrong
+2023-06-27 20:06:11.861 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 20:06:11.888 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in deleteOilRig with message Something went wrong
+2023-06-27 20:06:11.896 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in updateOilRig with message Something went wrong
+2023-06-27 20:06:11.906 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in addShipmentDateToOilRigById with message Something went wrong
+2023-06-27 20:06:27.711 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 20:06:27.742 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in deleteOilRig with message Something went wrong
+2023-06-27 20:06:27.750 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in updateOilRig with message Something went wrong
+2023-06-27 20:06:27.762 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in addShipmentDateToOilRigById with message Something went wrong
+2023-06-27 20:07:01.669 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 20:07:01.693 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in deleteOilRig with message Something went wrong
+2023-06-27 20:07:01.702 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in updateOilRig with message Something went wrong
+2023-06-27 20:07:01.713 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in addShipmentDateToOilRigById with message Something went wrong

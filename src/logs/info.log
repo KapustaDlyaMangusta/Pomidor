@@ -1,0 +1,107 @@
+2023-06-20 17:16:09.700 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-06-20 17:16:09.708 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-20 17:16:09.709 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-20 17:16:09.709 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-20 17:16:09.781 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-06-20 17:16:09.781 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 656 ms
+2023-06-20 17:16:10.011 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-06-20 17:16:10.024 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-20 17:57:55.827 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-06-20 17:57:55.849 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-20 17:57:55.850 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-20 17:57:55.850 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-20 17:57:55.979 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-06-20 17:57:55.979 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1476 ms
+2023-06-20 17:57:56.518 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-06-20 17:57:56.551 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-20 18:39:48.054 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-06-20 18:39:48.080 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-20 18:39:48.081 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-20 18:39:48.082 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-20 18:39:48.246 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-06-20 18:39:48.247 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1762 ms
+2023-06-20 18:39:48.858 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-06-20 18:39:48.894 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-20 18:43:47.841 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-06-20 18:43:47.850 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-20 18:43:47.851 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-20 18:43:47.851 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-20 18:43:47.910 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-06-20 18:43:47.910 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 687 ms
+2023-06-20 18:43:48.148 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-06-20 18:43:48.163 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-20 18:43:50.397 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-20 18:43:50.397 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-06-20 18:43:50.398 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-06-26 21:19:46.384 [main] ERROR c.c.p.i.writers.OilRigDataWriter - Error occurred in OilRigDataWriter with message null\oilRig-2023-06-26.csv (The system cannot find the path specified)
+2023-06-26 21:28:52.795 [main] ERROR c.c.p.i.writers.OilRigDataWriter - Error occurred in OilRigDataWriter with message null\oilRig-2023-06-26.csv (The system cannot find the path specified)
+2023-06-26 21:35:18.348 [main] ERROR c.c.p.i.writers.OilRigDataWriter - Error occurred in OilRigDataWriter with message null\oilRig-2023-06-26.csv (The system cannot find the path specified)
+2023-06-26 21:51:22.050 [main] ERROR c.c.p.i.writers.OilRigDataWriter - Error occurred in OilRigDataWriter with message null\oilRig-2023-06-26.csv (The system cannot find the path specified)
+2023-06-26 21:51:30.963 [main] ERROR c.c.p.i.writers.OilRigDataWriter - Error occurred in OilRigDataWriter with message E:\JavaProjects\Pomidor\src\test\test_data\oilRig-2023-06-26.csv (The system cannot find the path specified)
+2023-06-26 21:58:35.994 [main] ERROR c.c.p.i.writers.OilRigDataWriter - Error occurred in OilRigDataWriter with message E:\JavaProjects\Pomidor\src\test\test_data\oilRig-2023-06-26.csv (The system cannot find the path specified)
+2023-06-26 22:00:01.094 [main] ERROR c.c.p.i.writers.OilRigDataWriter - Error occurred in OilRigDataWriter with message E:\JavaProjects\Pomidor\src\test\test_data\oilRig-2023-06-26.csv (The system cannot find the path specified)
+2023-06-26 22:00:20.486 [main] ERROR c.c.p.i.writers.OilRigDataWriter - Error occurred in OilRigDataWriter with message E:\JavaProjects\Pomidor\src\test\test_data\oilRig-2023-06-26.csv (The system cannot find the path specified)
+2023-06-26 22:12:23.818 [main] ERROR c.c.p.i.readers.OilRigDataReader - Error occurred in OilRigDataReader with message E:\JavaProjects\Pomidor\src\test\test_data
+2023-06-26 22:13:31.840 [main] ERROR c.c.p.i.readers.OilRigDataReader - Error occurred in OilRigDataReader with message E:\JavaProjects\Pomidor\src\test\test_data
+2023-06-27 16:31:54.990 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 16:36:49.130 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 16:38:37.205 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 16:38:53.686 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 16:58:30.036 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 16:58:30.073 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in addShipmentDateToOilRigById with message null
+2023-06-27 16:59:55.958 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 16:59:55.996 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in addShipmentDateToOilRigById with message null
+2023-06-27 17:02:09.622 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 17:03:32.024 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in addShipmentDateToOilRigById with message null
+2023-06-27 17:03:46.601 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-06-27 17:03:46.610 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-27 17:03:46.611 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-27 17:03:46.611 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-27 17:03:46.704 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-06-27 17:03:46.704 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 747 ms
+2023-06-27 17:03:46.990 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-06-27 17:03:47.005 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-27 17:05:11.876 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-27 17:05:11.876 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-06-27 17:05:11.877 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-06-27 17:12:42.449 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 17:12:42.491 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in addShipmentDateToOilRigById with message null
+2023-06-27 17:13:32.890 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 17:13:43.260 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 17:14:40.846 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 17:15:03.663 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 17:16:40.605 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 17:16:40.669 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in addShipmentDateToOilRigById with message Something went wrong
+2023-06-27 17:21:28.034 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 17:21:28.077 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in addShipmentDateToOilRigById with message Something went wrong
+2023-06-27 17:23:11.915 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 17:23:11.950 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in addShipmentDateToOilRigById with message Something went wrong
+2023-06-27 17:24:47.286 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 17:24:47.313 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in deleteOilRig with message Something went wrong
+2023-06-27 17:24:47.328 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in addShipmentDateToOilRigById with message Something went wrong
+2023-06-27 17:25:10.257 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 17:25:10.280 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in deleteOilRig with message Something went wrong
+2023-06-27 17:25:10.296 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in addShipmentDateToOilRigById with message Something went wrong
+2023-06-27 17:29:57.328 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 17:29:57.349 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in deleteOilRig with message Something went wrong
+2023-06-27 17:29:57.366 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in addShipmentDateToOilRigById with message Something went wrong
+2023-06-27 17:35:27.895 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 17:35:27.923 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in deleteOilRig with message Something went wrong
+2023-06-27 17:35:27.933 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in updateOilRig with message Something went wrong
+2023-06-27 17:35:27.946 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in addShipmentDateToOilRigById with message Something went wrong
+2023-06-27 19:52:42.871 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 19:52:42.905 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in deleteOilRig with message Something went wrong
+2023-06-27 19:52:42.917 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in updateOilRig with message Something went wrong
+2023-06-27 19:52:42.931 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in addShipmentDateToOilRigById with message Something went wrong
+2023-06-27 20:06:11.861 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 20:06:11.888 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in deleteOilRig with message Something went wrong
+2023-06-27 20:06:11.896 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in updateOilRig with message Something went wrong
+2023-06-27 20:06:11.906 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in addShipmentDateToOilRigById with message Something went wrong
+2023-06-27 20:06:27.711 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 20:06:27.742 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in deleteOilRig with message Something went wrong
+2023-06-27 20:06:27.750 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in updateOilRig with message Something went wrong
+2023-06-27 20:06:27.762 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in addShipmentDateToOilRigById with message Something went wrong
+2023-06-27 20:07:01.669 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in createOilRig with message Something went wrong
+2023-06-27 20:07:01.693 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in deleteOilRig with message Something went wrong
+2023-06-27 20:07:01.702 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in updateOilRig with message Something went wrong
+2023-06-27 20:07:01.713 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in addShipmentDateToOilRigById with message Something went wrong
