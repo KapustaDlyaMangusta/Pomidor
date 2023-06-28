@@ -37,7 +37,7 @@ public final class OilRigService {
             final AddShipmentToOilRigByIdRequest request) {
         return oilRigRepository.addShipmentDateToOilRigById(
                 id,
-                request.shipmentDate);
+                request.shipmentDate());
     }
 
     public Result deleteOilRig(final UUID id) {

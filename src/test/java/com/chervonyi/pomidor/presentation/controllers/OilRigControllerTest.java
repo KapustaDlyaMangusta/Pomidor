@@ -15,6 +15,7 @@ import org.mockito.MockitoAnnotations;
 import org.springframework.http.HttpStatus;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
@@ -107,7 +108,8 @@ class OilRigControllerTest {
         var oilRig = new OilRig();
         var error = new ApplicationError(
                 "CreationError",
-                "Failed to create oil rig");
+                "Failed to create oil rig",
+                HttpStatus.INTERNAL_SERVER_ERROR);
 
         when(oilRigService.createOilRig(oilRig)).thenReturn(Result.failure(error));
 
@@ -120,7 +122,7 @@ class OilRigControllerTest {
     @Test
     void testAddShipmentDateToOilRigById_Success() {
         var id = UUID.randomUUID();
-        var request = new AddShipmentToOilRigByIdRequest();
+        var request = new AddShipmentToOilRigByIdRequest(new Date());
 
         when(oilRigService.addShipmentDateToOilRigById(id, request))
                 .thenReturn(Result.success());
@@ -133,10 +135,11 @@ class OilRigControllerTest {
     @Test
     void testAddShipmentDateToOilRigById_Failure() {
         var id = UUID.randomUUID();
-        var request = new AddShipmentToOilRigByIdRequest();
+        var request = new AddShipmentToOilRigByIdRequest(new Date());
         var error = new ApplicationError(
                 "AddShipmentDateToOilRigByIdError",
-                "Failed to add oil rig shipment date");
+                "Failed to add oil rig shipment date",
+                HttpStatus.INTERNAL_SERVER_ERROR);
 
         when(oilRigService.addShipmentDateToOilRigById(id, request))
                 .thenReturn(Result.failure(error));
@@ -162,7 +165,10 @@ class OilRigControllerTest {
     @Test
     void testDeleteOilRig_Failure() {
         var id = UUID.randomUUID();
-        var error = new ApplicationError("DeleteError", "Failed to delete oil rig");
+        var error = new ApplicationError(
+                "DeleteError",
+                "Failed to delete oil rig",
+                HttpStatus.INTERNAL_SERVER_ERROR);
 
         when(oilRigService.deleteOilRig(id))
                 .thenReturn(Result.failure(error));
@@ -192,7 +198,8 @@ class OilRigControllerTest {
         var updatedOilRig = new OilRig();
         var error = new ApplicationError(
                 "UpdateError",
-                "Failed to update oil rig");
+                "Failed to update oil rig",
+                HttpStatus.INTERNAL_SERVER_ERROR);
 
         when(oilRigService.updateOilRig(id, updatedOilRig))
                 .thenReturn(Result.failure(error));

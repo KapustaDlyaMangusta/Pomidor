@@ -105,3 +105,14 @@
 2023-06-27 20:07:01.693 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in deleteOilRig with message Something went wrong
 2023-06-27 20:07:01.702 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in updateOilRig with message Something went wrong
 2023-06-27 20:07:01.713 [main] ERROR c.c.p.i.r.OilRigRepository - Error occurred in OilRigRepository in addShipmentDateToOilRigById with message Something went wrong
+2023-06-28 12:43:16.545 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-06-28 12:43:16.566 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-28 12:43:16.567 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-28 12:43:16.567 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-28 12:43:16.728 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-06-28 12:43:16.729 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1560 ms
+2023-06-28 12:43:17.255 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-06-28 12:43:17.284 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-28 12:44:59.178 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-28 12:44:59.179 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-06-28 12:44:59.180 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
