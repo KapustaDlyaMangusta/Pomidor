@@ -2,14 +2,11 @@ package com.chervonyi.pomidor.infrastructure.readers;
 
 import com.chervonyi.pomidor.domain.enums.FillingDegree;
 import com.chervonyi.pomidor.infrastructure.BaseInfrastructureTest;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -17,7 +14,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class OilRigDataReaderTest extends BaseInfrastructureTest {
     private static OilRigDataReader oilRigDataReader;

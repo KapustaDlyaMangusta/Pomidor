@@ -75,15 +75,14 @@ public final class OilRigRepository {
             final Date shipmentDate) {
         try {
             var allOilRigs = dataContext.getOilRigMap();
+            var oilRig = allOilRigs.get(id);
 
-            for (var oilRig : allOilRigs.values()) {
-                if (oilRig.getId().toString().equals(id.toString())) {
-                    oilRig.getShipmentByTankerDates().add(shipmentDate);
+            if (oilRig != null){
+                oilRig.getShipmentByTankerDates().add(shipmentDate);
 
-                    saveChanges();
+                saveChanges();
 
-                    return Result.success();
-                }
+                return Result.success();
             }
 
             return Result.failure(OIL_RIG_NOT_FOUND_BY_ID_ERROR);

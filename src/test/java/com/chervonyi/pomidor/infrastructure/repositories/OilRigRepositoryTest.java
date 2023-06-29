@@ -3,7 +3,6 @@ package com.chervonyi.pomidor.infrastructure.repositories;
 import com.chervonyi.pomidor.domain.enums.FillingDegree;
 import com.chervonyi.pomidor.domain.errors.OilRigErrors;
 import com.chervonyi.pomidor.domain.models.OilRig;
-import com.chervonyi.pomidor.domain.shared.ApplicationError;
 import com.chervonyi.pomidor.infrastructure.BaseInfrastructureTest;
 import com.chervonyi.pomidor.infrastructure.context.DataContext;
 import com.chervonyi.pomidor.infrastructure.writers.OilRigDataWriter;
@@ -14,8 +13,6 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.springframework.test.util.ReflectionTestUtils;
 
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.*;

@@ -4,7 +4,6 @@ import com.chervonyi.pomidor.domain.enums.FillingDegree;
 import com.chervonyi.pomidor.domain.models.OilRig;
 import com.chervonyi.pomidor.infrastructure.BaseInfrastructureTest;
 import com.chervonyi.pomidor.infrastructure.readers.OilRigDataReader;
-import com.chervonyi.pomidor.infrastructure.writers.OilRigDataWriter;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -13,16 +12,15 @@ import org.mockito.MockitoAnnotations;
 import org.springframework.test.util.ReflectionTestUtils;
 
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.when;
 
 public class DataContextTest extends BaseInfrastructureTest {

@@ -11,7 +11,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 public class BaseInfrastructureTest {
-    protected static final String TEST_FILE_PATH = "E:/JavaProjects/Pomidor/src/test/test_data";
+    protected static final String TEST_FILE_PATH = "E:/JavaProjects/Pomidor/src/test";
 
     @BeforeAll
     public static void baseSetUp() throws IOException {
