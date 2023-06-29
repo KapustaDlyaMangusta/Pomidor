@@ -7,6 +7,5 @@ public class OilRigErrors {
     public static final ApplicationError OIL_RIG_NOT_FOUND_BY_ID_ERROR =
             new ApplicationError(
                 "OilRig.NotFoundOilRigById",
-                "Cannot find oilRig with specified id.",
-                HttpStatus.NOT_FOUND);
+                "Cannot find oilRig with specified id.");
     }

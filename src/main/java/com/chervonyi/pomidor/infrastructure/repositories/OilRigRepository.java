@@ -1,14 +1,12 @@
 package com.chervonyi.pomidor.infrastructure.repositories;
 
 import com.chervonyi.pomidor.domain.models.OilRig;
-import com.chervonyi.pomidor.domain.shared.ApplicationError;
 import com.chervonyi.pomidor.domain.shared.Result;
 import com.chervonyi.pomidor.domain.shared.ValueResult;
 import com.chervonyi.pomidor.infrastructure.context.DataContext;
 import com.chervonyi.pomidor.infrastructure.writers.OilRigDataWriter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Repository;
 
 import java.util.Date;
@@ -62,11 +60,7 @@ public final class OilRigRepository {
                     + "in createOilRig with message {}",
                     e.getMessage());
 
-            return Result.failure(
-                    new ApplicationError(
-                        "OilRig.CreateError",
-                        e.getMessage(),
-                        HttpStatus.INTERNAL_SERVER_ERROR));
+            throw e;
         }
     }
 
@@ -77,7 +71,7 @@ public final class OilRigRepository {
             var allOilRigs = dataContext.getOilRigMap();
             var oilRig = allOilRigs.get(id);
 
-            if (oilRig != null){
+            if (oilRig != null) {
                 oilRig.getShipmentByTankerDates().add(shipmentDate);
 
                 saveChanges();
@@ -92,11 +86,7 @@ public final class OilRigRepository {
                     + "in addShipmentDateToOilRigById with message {}",
                     e.getMessage());
 
-            return Result.failure(
-                    new ApplicationError(
-                        "OilRig.AddShipmentDateToOilRigByIdError",
-                        e.getMessage(),
-                        HttpStatus.INTERNAL_SERVER_ERROR));
+            throw e;
         }
     }
 
@@ -118,11 +108,7 @@ public final class OilRigRepository {
                     + " in deleteOilRig with message {}",
                     e.getMessage());
 
-            return Result.failure(
-                    new ApplicationError(
-                        "OilRig.DeleteOilRigError",
-                        e.getMessage(),
-                        HttpStatus.INTERNAL_SERVER_ERROR));
+            throw e;
         }
     }
 
@@ -151,11 +137,7 @@ public final class OilRigRepository {
                     + " in updateOilRig with message {}",
                     e.getMessage());
 
-            return Result.failure(
-                    new ApplicationError(
-                        "OilRig.UpdateOilRigError",
-                        e.getMessage(),
-                        HttpStatus.INTERNAL_SERVER_ERROR));
+            throw e;
         }
     }
 

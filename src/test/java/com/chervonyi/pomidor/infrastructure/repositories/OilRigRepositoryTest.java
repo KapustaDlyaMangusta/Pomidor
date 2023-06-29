@@ -121,21 +121,6 @@ class OilRigRepositoryTest extends BaseInfrastructureTest {
     }
 
     @Test
-    void testCreateOilRig_Error() {
-        var oilRig = new OilRig(null, FillingDegree.EMPTY, 52.123, 4.567, new ArrayList<>());
-
-        when(dataContext.getOilRigMap()).thenThrow(new RuntimeException("Something went wrong"));
-
-        var result = oilRigRepository.createOilRig(oilRig);
-
-        assertFalse(result.isSuccess());
-
-        assertEquals("OilRig.CreateError", result.error().code());
-
-        verify(oilRigDataWriter, never()).writeToCsv(anyMap());
-    }
-
-    @Test
     public void testAddShipmentDateToOilRigById_Success() {
         var oilRig = defaultOilRigs.get(0);
         var shipmentDate = new Date();
@@ -168,20 +153,6 @@ class OilRigRepositoryTest extends BaseInfrastructureTest {
     }
 
     @Test
-    public void testAddShipmentDateToOilRigById_Error() {
-        var oilRigId = UUID.randomUUID();
-        var shipmentDate = new Date();
-        when(dataContext.getOilRigMap()).thenThrow(new RuntimeException("Something went wrong"));
-
-        var result = oilRigRepository.addShipmentDateToOilRigById(oilRigId, shipmentDate);
-
-        assertFalse(result.isSuccess());
-        assertEquals("Something went wrong", result.error().message());
-
-        verify(oilRigDataWriter, never()).writeToCsv(any());
-    }
-
-    @Test
     public void testDeleteOilRig_Success() {
         var oilRig = defaultOilRigs.get(0);
 
@@ -208,18 +179,6 @@ class OilRigRepositoryTest extends BaseInfrastructureTest {
 
         assertFalse(result.isSuccess());
         assertEquals(OilRigErrors.OIL_RIG_NOT_FOUND_BY_ID_ERROR, result.error());
-
-        verify(oilRigDataWriter, never()).writeToCsv(any());
-    }
-
-    @Test
-    public void testDeleteOilRig_Error() {
-        when(dataContext.getOilRigMap()).thenThrow(new RuntimeException("Something went wrong"));
-
-        var result = oilRigRepository.deleteOilRig(UUID.randomUUID());
-
-        assertFalse(result.isSuccess());
-        assertEquals("Something went wrong", result.error().message());
 
         verify(oilRigDataWriter, never()).writeToCsv(any());
     }
@@ -268,17 +227,5 @@ class OilRigRepositoryTest extends BaseInfrastructureTest {
         assertEquals(updatedOilRig.getShipmentByTankerDates(), oilRig.getShipmentByTankerDates());
 
         verify(oilRigDataWriter, times(1)).writeToCsv(oilRigMap);
-    }
-
-    @Test
-    public void testUpdateOilRig_Error() {
-        when(dataContext.getOilRigMap()).thenThrow(new RuntimeException("Something went wrong"));
-
-        var result = oilRigRepository.updateOilRig(UUID.randomUUID(), null);
-
-        assertFalse(result.isSuccess());
-        assertEquals("Something went wrong", result.error().message());
-
-        verify(oilRigDataWriter, never()).writeToCsv(any());
     }
 }

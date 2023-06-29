@@ -4,6 +4,7 @@ import com.chervonyi.pomidor.application.services.OilRigService;
 import com.chervonyi.pomidor.domain.models.OilRig;
 import com.chervonyi.pomidor.presentation.contracts.AddShipmentToOilRigByIdRequest;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -26,8 +27,7 @@ public final class OilRigController {
 
          return result.isSuccess()
                  ? ResponseEntity.ok(result.getValue())
-                 : ResponseEntity.status(result.error().httpStatus())
-                    .body(result.error());
+                 : ResponseEntity.badRequest().body(result.error());
     }
 
     @GetMapping(path = "/{id}")
@@ -37,8 +37,7 @@ public final class OilRigController {
 
         return result.isSuccess()
                 ? ResponseEntity.ok(result.getValue())
-                : ResponseEntity.status(result.error().httpStatus())
-                    .body(result.error());
+                : ResponseEntity.status(HttpStatus.NOT_FOUND).body(result.error());
     }
 
     @PostMapping(produces = {MediaType.APPLICATION_JSON_VALUE})
@@ -48,7 +47,7 @@ public final class OilRigController {
 
         return result.isSuccess()
                 ? ResponseEntity.ok(null)
-                : ResponseEntity.status(result.error().httpStatus())
+                : ResponseEntity.badRequest()
                     .body(result.error());
     }
 
@@ -62,7 +61,7 @@ public final class OilRigController {
 
         return result.isSuccess()
                 ? ResponseEntity.ok(null)
-                : ResponseEntity.status(result.error().httpStatus())
+                : ResponseEntity.badRequest()
                     .body(result.error());
     }
 
@@ -73,7 +72,7 @@ public final class OilRigController {
 
         return result.isSuccess()
                 ? ResponseEntity.ok(null)
-                : ResponseEntity.status(result.error().httpStatus())
+                : ResponseEntity.badRequest()
                     .body(result.error());
     }
 
@@ -85,7 +84,7 @@ public final class OilRigController {
 
         return result.isSuccess()
                 ? ResponseEntity.ok(null)
-                : ResponseEntity.status(result.error().httpStatus())
+                : ResponseEntity.badRequest()
                     .body(result.error());
     }
 }

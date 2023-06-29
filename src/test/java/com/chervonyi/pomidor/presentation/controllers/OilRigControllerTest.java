@@ -62,7 +62,7 @@ class OilRigControllerTest {
 
         var response = oilRigController.getOilRigs();
 
-        assertEquals(HttpStatus.INTERNAL_SERVER_ERROR, response.getStatusCode());
+        assertEquals(HttpStatus.BAD_REQUEST, response.getStatusCode());
         assertEquals(failureResult.error(), response.getBody());
 
         verify(oilRigService, times(1)).getOilRigs();
@@ -88,7 +88,7 @@ class OilRigControllerTest {
 
         var response = oilRigController.getOilRig(id);
 
-        assertEquals(HttpStatus.INTERNAL_SERVER_ERROR, response.getStatusCode());
+        assertEquals(HttpStatus.NOT_FOUND, response.getStatusCode());
         assertEquals(ApplicationError.NULL_VALUE, response.getBody());
     }
 
@@ -108,14 +108,13 @@ class OilRigControllerTest {
         var oilRig = new OilRig();
         var error = new ApplicationError(
                 "CreationError",
-                "Failed to create oil rig",
-                HttpStatus.INTERNAL_SERVER_ERROR);
+                "Failed to create oil rig");
 
         when(oilRigService.createOilRig(oilRig)).thenReturn(Result.failure(error));
 
         var response = oilRigController.createOilRig(oilRig);
 
-        assertEquals(HttpStatus.INTERNAL_SERVER_ERROR, response.getStatusCode());
+        assertEquals(HttpStatus.BAD_REQUEST, response.getStatusCode());
         assertEquals(error, response.getBody());
     }
 
@@ -138,15 +137,14 @@ class OilRigControllerTest {
         var request = new AddShipmentToOilRigByIdRequest(new Date());
         var error = new ApplicationError(
                 "AddShipmentDateToOilRigByIdError",
-                "Failed to add oil rig shipment date",
-                HttpStatus.INTERNAL_SERVER_ERROR);
+                "Failed to add oil rig shipment date");
 
         when(oilRigService.addShipmentDateToOilRigById(id, request))
                 .thenReturn(Result.failure(error));
 
         var response = oilRigController.addShipmentDateToOilRigById(id, request);
 
-        assertEquals(HttpStatus.INTERNAL_SERVER_ERROR, response.getStatusCode());
+        assertEquals(HttpStatus.BAD_REQUEST, response.getStatusCode());
         assertEquals(error, response.getBody());
     }
 
@@ -167,15 +165,14 @@ class OilRigControllerTest {
         var id = UUID.randomUUID();
         var error = new ApplicationError(
                 "DeleteError",
-                "Failed to delete oil rig",
-                HttpStatus.INTERNAL_SERVER_ERROR);
+                "Failed to delete oil rig");
 
         when(oilRigService.deleteOilRig(id))
                 .thenReturn(Result.failure(error));
 
         var response = oilRigController.deleteOilRig(id);
 
-        assertEquals(HttpStatus.INTERNAL_SERVER_ERROR, response.getStatusCode());
+        assertEquals(HttpStatus.BAD_REQUEST, response.getStatusCode());
         assertEquals(error, response.getBody());
     }
 
@@ -198,15 +195,14 @@ class OilRigControllerTest {
         var updatedOilRig = new OilRig();
         var error = new ApplicationError(
                 "UpdateError",
-                "Failed to update oil rig",
-                HttpStatus.INTERNAL_SERVER_ERROR);
+                "Failed to update oil rig");
 
         when(oilRigService.updateOilRig(id, updatedOilRig))
                 .thenReturn(Result.failure(error));
 
         var response = oilRigController.updateOilRig(id, updatedOilRig);
 
-        assertEquals(HttpStatus.INTERNAL_SERVER_ERROR, response.getStatusCode());
+        assertEquals(HttpStatus.BAD_REQUEST, response.getStatusCode());
         assertEquals(error, response.getBody());
     }
 }

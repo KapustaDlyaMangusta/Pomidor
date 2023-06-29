@@ -1,17 +1,12 @@
 package com.chervonyi.pomidor.domain.shared;
 
-import jakarta.annotation.Nullable;
-import org.springframework.http.HttpStatus;
-
 public record ApplicationError(
         String code,
-        String message,
-        @Nullable HttpStatus httpStatus) {
-    public static final ApplicationError NONE = new ApplicationError("", "", null);
+        String message) {
+    public static final ApplicationError NONE = new ApplicationError("", "");
     public static final ApplicationError NULL_VALUE =  new ApplicationError(
             "Error.NullValue",
-            "The specified result value is null.",
-            HttpStatus.INTERNAL_SERVER_ERROR);
+            "The specified result value is null.");
 
     @Override
     public String toString() {
