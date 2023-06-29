@@ -62,7 +62,7 @@ class OilRigControllerTest {
 
         var response = oilRigController.getOilRigs();
 
-        assertEquals(HttpStatus.BAD_REQUEST, response.getStatusCode());
+        assertEquals(HttpStatus.INTERNAL_SERVER_ERROR, response.getStatusCode());
         assertEquals(failureResult.error(), response.getBody());
 
         verify(oilRigService, times(1)).getOilRigs();
@@ -88,7 +88,7 @@ class OilRigControllerTest {
 
         var response = oilRigController.getOilRig(id);
 
-        assertEquals(HttpStatus.BAD_REQUEST, response.getStatusCode());
+        assertEquals(HttpStatus.INTERNAL_SERVER_ERROR, response.getStatusCode());
         assertEquals(ApplicationError.NULL_VALUE, response.getBody());
     }
 
@@ -115,7 +115,7 @@ class OilRigControllerTest {
 
         var response = oilRigController.createOilRig(oilRig);
 
-        assertEquals(HttpStatus.BAD_REQUEST, response.getStatusCode());
+        assertEquals(HttpStatus.INTERNAL_SERVER_ERROR, response.getStatusCode());
         assertEquals(error, response.getBody());
     }
 
@@ -146,7 +146,7 @@ class OilRigControllerTest {
 
         var response = oilRigController.addShipmentDateToOilRigById(id, request);
 
-        assertEquals(HttpStatus.BAD_REQUEST, response.getStatusCode());
+        assertEquals(HttpStatus.INTERNAL_SERVER_ERROR, response.getStatusCode());
         assertEquals(error, response.getBody());
     }
 
@@ -175,7 +175,7 @@ class OilRigControllerTest {
 
         var response = oilRigController.deleteOilRig(id);
 
-        assertEquals(HttpStatus.BAD_REQUEST, response.getStatusCode());
+        assertEquals(HttpStatus.INTERNAL_SERVER_ERROR, response.getStatusCode());
         assertEquals(error, response.getBody());
     }
 
@@ -206,7 +206,7 @@ class OilRigControllerTest {
 
         var response = oilRigController.updateOilRig(id, updatedOilRig);
 
-        assertEquals(HttpStatus.BAD_REQUEST, response.getStatusCode());
+        assertEquals(HttpStatus.INTERNAL_SERVER_ERROR, response.getStatusCode());
         assertEquals(error, response.getBody());
     }
 }
